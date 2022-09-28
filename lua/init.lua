@@ -1,10 +1,27 @@
 -- basics
+vim.cmd[[colorscheme molokai]]
 vim.g.mapleader = ","
 vim.g.background = "dark"
 vim.g.t_co = 256
 vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1
 vim.g.termguicolors = true
+
+-- disable some useless standard plugins to save startup time
+-- these features have been better covered by plugins
+vim.g.loaded_matchparen        = 1
+vim.g.loaded_matchit           = 1
+vim.g.loaded_logiPat           = 1
+vim.g.loaded_rrhelper          = 1
+vim.g.loaded_tarPlugin         = 1
+vim.g.loaded_gzip              = 1
+vim.g.loaded_zipPlugin         = 1
+vim.g.loaded_2html_plugin      = 1
+vim.g.loaded_shada_plugin      = 1
+vim.g.loaded_spellfile_plugin  = 1
+vim.g.loaded_netrw             = 1
+vim.g.loaded_netrwPlugin       = 1
+vim.g.loaded_tutor_mode_plugin = 1
+vim.g.loaded_remote_plugins    = 1
 
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
@@ -32,11 +49,10 @@ vim.opt.smartcase = true
 vim.opt.incsearch = true
 
 
-
 require("plugins")
+require("keymaps")
 
 -- plugins
-
 require'nvim-web-devicons'.setup {
  override = {
   zsh = {
@@ -49,7 +65,8 @@ require'nvim-web-devicons'.setup {
  default = true;
 }
 
-require("configs.nerdtree")
+require("configs.nvimtree").config()
+require("configs.lualine").config()
 
 
 

@@ -74,15 +74,35 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["filetype.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/filetype.nvim",
+    url = "https://github.com/nathom/filetype.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
+  indentLine = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/indentLine",
+    url = "https://github.com/Yggdroot/indentLine"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  nerdtree = {
-    loaded = true,
-    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/scrooloose/nerdtree"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -99,10 +119,30 @@ _G.packer_plugins = {
     path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   tagbar = {
     loaded = true,
     path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/tagbar",
     url = "https://github.com/majutsushi/tagbar"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-startuptime"] = {
+    loaded = true,
+    path = "/Users/xjliu/.local/share/nvim/site/pack/packer/start/vim-startuptime",
+    url = "https://github.com/dstein64/vim-startuptime"
   }
 }
 

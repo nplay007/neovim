@@ -2,12 +2,44 @@
 vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'preservim/nerdtree'
+
     use 'majutsushi/tagbar'
-    use 'kyazdani42/nvim-web-devicons'
+   	use 'dstein64/vim-startuptime'
+	use 'lewis6991/impatient.nvim'
+	use 'nathom/filetype.nvim'
+
+	-- file tree
+	use {
+		'kyazdani42/nvim-tree.lua',
+		requires = 'kyazdani42/nvim-web-devicons'
+	}
+
     use {
      'nvim-lualine/lualine.nvim',
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+
+    -- git
+    use {
+	'lewis6991/gitsigns.nvim',
+	tag = 'release',
+	}
+
+	-- buffer
+	use {
+		'akinsho/bufferline.nvim',
+		requires = 'kyazdani42/nvim-web-devicons'
+	}
+
+	-- floating terminal
+	use 'akinsho/toggleterm.nvim'
+
+    -- telescope
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        requires = {'nvim-lua/plenary.nvim'} 
+    }
+    
+    use 'Yggdroot/indentLine'
 end)
 
