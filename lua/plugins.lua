@@ -41,5 +41,7 @@ return require('packer').startup(function(use)
     }
     
     use 'Yggdroot/indentLine'
+
+    use 'google/vim-jsonnet'
 end)
 
