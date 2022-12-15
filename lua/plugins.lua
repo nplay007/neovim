@@ -8,6 +8,14 @@ return require('packer').startup(function(use)
 	use 'lewis6991/impatient.nvim'
 	use 'nathom/filetype.nvim'
 
+    use {
+        'neovim/nvim-lspconfig'
+    }
+
+    use {
+        'nvim-lua/completion-nvim'
+    }
+
 	-- file tree
 	use {
 		'kyazdani42/nvim-tree.lua',
@@ -43,5 +51,6 @@ return require('packer').startup(function(use)
     use 'Yggdroot/indentLine'
 
     use 'google/vim-jsonnet'
+
 end)
 

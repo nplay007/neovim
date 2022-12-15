@@ -68,5 +68,7 @@ require'nvim-web-devicons'.setup {
 require("configs.nvimtree").config()
 require("configs.lualine").config()
 
+require('lspconfig')
+
 
 
