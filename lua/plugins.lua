@@ -9,6 +9,7 @@ return require('packer').startup(function(use)
     use 'nathom/filetype.nvim'
     use 'Yggdroot/indentLine'
     use 'google/vim-jsonnet'
+    use 'rhysd/vim-grammarous'
 
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
@@ -16,6 +17,8 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+	use 'glepnir/lspsaga.nvim'
+	use 'L3MON4D3/LuaSnip'
 
 
     -- tabs

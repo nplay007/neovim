@@ -51,7 +51,6 @@ vim.opt.incsearch = true
 
 require("plugins")
 require("keymaps")
-require('impatient')
 
 -- plugins
 require'nvim-web-devicons'.setup {
@@ -66,10 +65,13 @@ require'nvim-web-devicons'.setup {
  default = true;
 }
 
+require('impatient')
 require("configs.nvimtree").config()
 require("configs.lualine").config()
 require("configs.gitsigns").config()
-require("lspconfig").gopls.setup{}
+require("configs.grammar").config()
+require("configs.autocomplete").config()
+
 
 
 
